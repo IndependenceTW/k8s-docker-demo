@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: demo-pod
+  labels:
+    type: demo
+spec:
+  containers:
+    - name: demo-server
+      image: independencetw/demo-server
+      ports:
+        - containerPort: 3000
