@@ -16,4 +16,4 @@ spec:
         - name: demo-server
           image: independencetw/demo-server
           ports:
-            - containerPort: 8080
+            - containerPort: 3000

@@ -5,12 +5,8 @@ app.get('/', function (_, res) {
     res.send('Welcome');
 });
 
-app.get('/hello/:name', function (req, res) {
-    res.send('Hello ' + req.params.name);
-});
-
-app.get('/version', function (_, res) {
-    res.send('Version 1.0');
+app.get('/crash', function (_,_) {
+    process.exit(1);
 });
 
 var server = app.listen(3000, function () {
